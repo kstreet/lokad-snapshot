@@ -10,13 +10,11 @@ Key Features:
 * Multiple storage accounts can be backed up using the same dedicated backup account
 * Keeps the last N successful snapshots of every account, drops older snapshots
 * Can scale up using multiple worker instances if more speed is required
-* Provides an endpoint for simple monitoring which is compatible to [Lokad.Monitoring] (http://code.google.com/p/lokad-monitoring/)
 
 Limitations of the current version:
 
 * Only supports tables using the [FatEntity] (https://github.com/Lokad/lokad-cloud/wiki/FatEntities ) type of [Lokad.Cloud] (http://lokad.github.com/lokad-cloud/), i.e. tables which are created and accessed using Lokad.Cloud's table storage provider
 * No web interface for configuration, simply edit the !ServiceConfiguration.cscfg file instead.
-* No web interface for status reporting. The monitoring REST endpoint is very simple to consume though, or you can deploy [Lokad.Monitoring] (http://code.google.com/p/lokad-monitoring/).
 * Azure storage account names can not be longer than 18 characters (Azure would allow 24).
 
 ## Getting Started
